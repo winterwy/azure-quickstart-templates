@@ -3,13 +3,13 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "passPhrase": {
-      "value": "GEN-UNIQUE"
+      "value": ""
     },
     "vaultName": {
-      "value": "GET-PREREQ-vaultName"
+      "value": "vault0413"
     },
     "vaultResourceGroup": {
-      "value": "GET-PREREQ-vaultResourceGroup"
+      "value": "KeyVault"
     }
   }
 }

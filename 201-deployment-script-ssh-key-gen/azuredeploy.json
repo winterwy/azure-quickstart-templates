@@ -18,7 +18,7 @@
         },
         "passPhrase": {
             "type": "string",
-            "minLength": 6,
+            "minLength": 0,
             "maxLength": 64,
             "metadata": {
                 "description": "Passphrase used when generating the key pair."
@@ -81,7 +81,7 @@
         },
         {
             "type": "Microsoft.Authorization/roleAssignments",
-            "apiVersion": "2019-04-01-preview",
+            "apiVersion": "2017-09-01",
             "name": "[variables('roleDefinitionName')]",
             "dependsOn": [
                 "[variables('identityName')]"
@@ -120,7 +120,7 @@
             }
         },
         {
-            "apiVersion": "2019-09-01",
+            "apiVersion": "2019-10-01",
             "name": "storeSshKeys",
             "type": "Microsoft.Resources/deployments",
             "resourceGroup": "[parameters('vaultResourceGroup')]",
