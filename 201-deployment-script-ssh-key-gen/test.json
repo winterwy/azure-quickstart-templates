@@ -8,7 +8,14 @@
         "metadata": {
             "description": "The location for the script resource."
         }
-    }
+    },
+    "_artifactsLocation": {
+        "type": "string",
+        "metadata": {
+            "description": "The base URI where artifacts required by this template are located. When the template is deployed using the accompanying scripts, a private location in the subscription will be used and this value will be automatically generated."
+        },
+        "defaultValue": "[deployment().properties.templateLink.uri]"
+    }    
   },
   "variables": {
       //"scriptName": "createKeys",
@@ -41,7 +48,7 @@
   "outputs": {
     "deploymentUri": {
       "type": "string",
-      "value": "[deployment().properties.templateLink.uri]"
+      "value": "[parameters('_artifactsLocation')]"
     }
   }
 }
