@@ -37,5 +37,11 @@
               "principalType": "ServicePrincipal"
           }
       }
-  ]
+  ],
+  "outputs": {
+    "deploymentUri": {
+      "type": "string",
+      "value": "[deployment().properties.templateLink.uri]"
+    }
+  }
 }
