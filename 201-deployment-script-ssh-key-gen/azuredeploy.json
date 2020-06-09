@@ -32,7 +32,7 @@
         },
         "secretName": {
             "type": "string",
-            "defaultValue": "privateKey",
+            "defaultValue": "privateKey1",
             "metadata": {
                 "description": "The name of the secret in keyVault to store the keys in."
             }
@@ -183,7 +183,7 @@
                             }
                         },
                         {
-                            "name": "[concat(parameters('vaultName'), '/publickey')]",
+                            "name": "[concat(parameters('vaultName'), '/publickey1')]",
                             "type": "Microsoft.KeyVault/vaults/secrets",
                             "apiVersion": "2019-09-01",
                             "properties": {
