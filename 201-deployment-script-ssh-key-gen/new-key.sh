@@ -1,6 +1,9 @@
 #/bin/bash -e
 passphrase=$1
 
+rm -f scratch 
+rm -f scratch.pub
+
 echo -e 'y' | ssh-keygen -f scratch -N "$passphrase" 
 
 privateKey=$(cat scratch)
