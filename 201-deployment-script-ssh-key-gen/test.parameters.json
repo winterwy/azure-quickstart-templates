@@ -1,0 +1,20 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "adminUsername": {
+          "value": "azureuser"
+        },
+        "adminPublicKey": {
+          "reference": {
+            "keyVault": {
+            "id": "/subscriptions/a3a8e615-adf7-41d3-b249-8a58b5db8057/resourceGroups/<rg-name>/providers/Microsoft.KeyVault/vaults/vault0413"
+            },
+            "secretName": "publickey1"
+          }
+        },
+        "virtualMachineName": {
+          "value": "ansiblevm"
+        }
+    }
+  }
