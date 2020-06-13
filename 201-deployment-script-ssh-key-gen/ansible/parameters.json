@@ -1,0 +1,48 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "adminSSHPublicKey": {
+            "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQD264CKkEjQxgyJHOOJsiGfX7LbOxJIjEqc7FXOsRSCNFYKgIdOk5qBZb5AcgMtmgKMhX2JPBLjeMTmHKoivqGMUUwlm/C0V4j83N7AFGI+mOIkYCmgWZzHphYBZo5eO+lLGD/UHp1sqmvilwPLrkSlEWI94cdmYRbTx1oueFJMhnGUt13pSg60REiJFStefwLtaz9jjEepRrAPa0tM20cd3riNTyRfmY3miCk+GvOCScZGs/f3GPQ50wLuW3lEbBYnx50hqGN9RE59CfN63PcjCl9WN9jc4is23RADOJFIMkw590srBQMXKXj9wQqY5jVcnnwzEOTfW80vPBw44tAMEQSNWGP0xzc2r+cE8LRhSw1CUbj3Qk0fxEizy3xSxMpylG5J4/hfUm9d4vAwXm8o/iFVIfRoJ1L1N2boJvqfMIuSZPB49tIsyW5ZX/tni0baxqhyAAeyFAXWfoFNHgMESWWWcVN0ia4ESm5/gktBYU+BI7eKgcO+cOdfKtu9Auc="
+        },
+        "adminUserName": {
+            "value": "azureuser"
+        },
+        "authenticationType": {
+            "value": "sshPublicKey"
+        },
+        "publicIPName": {
+            "value": "ansible-pip"
+        },
+        "dnsPrefix": {
+            "value": "ansible0413"
+        },
+        "publicIPNewOrExisting": {
+            "value": "new"
+        },
+        "publicIPResourceGroup": {
+            "value": "ansible"
+        },
+        "publicIPAllocationMethod": {
+            "value": "Dynamic"
+        },
+        "storageAccountType": {
+            "value": "Premium_LRS"
+        },
+        "vmName": {
+            "value": "ansiblevm1"
+        },
+        "vmSize": {
+            "value": "Standard_D2s_v3"
+        },
+        "location": {
+            "value": "australiaeast"
+        },
+        "ansibleVersion": {
+            "value": "latest"
+        },
+        "spType": {
+            "value": "msi"
+        }
+    }
+}

@@ -183,7 +183,7 @@
                             }
                         },
                         {
-                            "name": "[concat(parameters('vaultName'), '/publickey1')]",
+                            "name": "[concat(parameters('vaultName'), '/publickey')]",
                             "type": "Microsoft.KeyVault/vaults/secrets",
                             "apiVersion": "2019-09-01",
                             "properties": {
