@@ -8,9 +8,9 @@
         "adminPublicKey": {
           "reference": {
             "keyVault": {
-            "id": "/subscriptions/a3a8e615-adf7-41d3-b249-8a58b5db8057/resourceGroups/KeyVault/providers/Microsoft.KeyVault/vaults/vault0413"
+            "id": "/subscriptions/837d419d-f482-43c2-808b-31cff6fe4256/resourceGroups/ansible/providers/Microsoft.KeyVault/vaults/keyvaultydd0413"
             },
-            "secretName": "publickey1"
+            "secretName": "publickey"
           }
         },
         "virtualMachineName": {
